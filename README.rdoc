@@ -13,7 +13,9 @@ The omniauth_openam library is an OmniAuth provider that supports authentication
   gem 'omniauth', '>= 1.0.0'  # We depend on this
   gem "omniauth_openam"
 
-=== 2. You will need to configure OmniAuth to use your OpenAM authentication.  This is generally done in Rails in the config/initializers/omniauth.rb with...
+=== 2. You will need to configure OmniAuth to use your OpenAM authentication.  
+
+This is generally done in Rails in the config/initializers/omniauth.rb with...
 
   Rails.application.config.middleware.use OmniAuth::Builder do
     provider :openam, name: "openam", :openam_url =>"https://mycompanyname.com/openam", :redirect_url => "http://myrelyingparty.com/path"
