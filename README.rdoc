@@ -1,0 +1,28 @@
+= omniauth_openam 
+
+The omniauth_openam library is an OmniAuth provider that supports authentication against OpenAM REST apis.
+
+== Helpful links
+
+*	<b>Documentation:</b> http://tree.mn/rahul.gh/omniauth_openam
+*	<b>OmniAuth:</b> https://github.com/intridea/omniauth/
+
+== Install and use
+
+=== 1. Add the OmniAuth OpenAM REST plugin to your Gemfile
+  gem 'omniauth', '>= 1.0.0'  # We depend on this
+  gem "omniauth_openam"
+
+=== 2. You will need to configure OmniAuth to use your OpenAM authentication.  This is generally done in Rails in the config/initializers/omniauth.rb with...
+
+  Rails.application.config.middleware.use OmniAuth::Builder do
+    provider :openam, :openam_server_url=>"https://mycompanyname.com/openam", :app_name=>"app", :app_pass=>"password"
+  end
+
+You will need to supply the correct server URL, application name and password
+
+== Copyright
+
+Copyleft 2014 Rahul Ghose. See LICENSE.txt for
+further details.
+
