@@ -1,10 +1,10 @@
-= omniauth_openam 
+= omniauth-openam 
 
 The omniauth_openam library is an OmniAuth provider that supports authentication against OpenAM REST apis.
 
 == Helpful links
 
-*	<b>Documentation:</b> https://github.com/rghose/omniauth_openam
+*	<b>Documentation:</b> https://github.com/rghose/omniauth-openam
 *	<b>OmniAuth:</b> https://github.com/intridea/omniauth/
 
 == Install and use
@@ -16,10 +16,10 @@ The omniauth_openam library is an OmniAuth provider that supports authentication
 === 2. You will need to configure OmniAuth to use your OpenAM authentication.  This is generally done in Rails in the config/initializers/omniauth.rb with...
 
   Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :openam, :openam_server_url=>"https://mycompanyname.com/openam", :app_name=>"app", :app_pass=>"password"
+    provider :openam, name: "openam", :openam_url =>"https://mycompanyname.com/openam", :redirect_url => "http://myrelyingparty.com/path"
   end
 
-You will need to supply the correct server URL, application name and password
+You will need to supply the correct server URL and redirect URL
 
 == Copyright
 
