@@ -4,7 +4,7 @@ The omniauth_openam library is an OmniAuth provider that supports authentication
 
 == Helpful links
 
-*	<b>Documentation:</b> http://tree.mn/rahul.gh/omniauth_openam
+*	<b>Documentation:</b> https://github.com/rghose/omniauth_openam
 *	<b>OmniAuth:</b> https://github.com/intridea/omniauth/
 
 == Install and use
