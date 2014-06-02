@@ -1,6 +1,6 @@
 = omniauth-openam 
 
-The omniauth_openam library is an OmniAuth provider that supports authentication against OpenAM REST apis.
+The omniauth-openam library is an OmniAuth provider that supports authentication against OpenAM REST apis.
 
 == Helpful links
 
