@@ -11,7 +11,7 @@ The omniauth_openam library is an OmniAuth provider that supports authentication
 
 === 1. Add the OmniAuth OpenAM REST plugin to your Gemfile
   gem 'omniauth', '>= 1.0.0'  # We depend on this
-  gem "omniauth_openam"
+  gem "omniauth-openam"
 
 === 2. You will need to configure OmniAuth to use your OpenAM authentication.  
 
