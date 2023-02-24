@@ -14,6 +14,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version = OmniAuth::Openam::VERSION
 
-  gem.add_dependency 'omniauth', '~> 1.0'
+  gem.add_dependency 'omniauth', '>= 1', '< 3'
   gem.add_dependency 'nokogiri', '>= 1.4.4'
 end
